@@ -8,7 +8,7 @@ http.createServer(function (request, response) {
    response.writeHead(200, {'Content-Type': 'text/plain'});
 
    // Send the response body as "Hello World"
-   response.end('EC2 instance created and Application configured via Ansible and changes will be moniterred by Ansible-Pull for every 5 mins \n');
+   response.end('EC2 instance created via CloudFormation Template \n Application components installed and configured via Ansible \n Code changes applied to Application via Ansible-Pull and Cron Jobs in every 5 mins \n');
 }).listen(3000);
 
 // Console will print the message
