@@ -1,0 +1,13 @@
+- hosts: servers
+  vars:
+    greeting: Hello world! 
+
+  tasks:
+  - name : Get server uptime
+    command: uname -a
+    register: result
+  - name: Ansible Basic Variable Example
+    debug:
+      msg: 
+      - "{{ greeting }}"
+      - "Result is {{ result }}"
